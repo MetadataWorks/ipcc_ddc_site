@@ -19,8 +19,7 @@ logos: ssi12/logos/All.html
  <!-- Enter Main Text Here -->
  <p> The DDC has been established by the IPCC to provide a common and easily accessible set of
  information relating to climate change scenarios for impacts and adaptation assessments.
- As well as providing direct access to GCM data through the <a href="/sim/index.html"
- >DDC GCM Data Archive</a>, the DDC also provides users with access to a variety of other
+ As well as providing direct access to GCM data through the <a href="/sim/index.html">DDC GCM Data Archive</a>, the DDC also provides users with access to a variety of other
  scenario information and descriptions of these various datasets and how they can be used in
  scenario construction and impacts assessment.</p>
  
@@ -32,7 +31,5 @@ logos: ssi12/logos/All.html
  Guidelines Section</a>.</p>
  
  <p> Finally, if you have any questions about the DDC, find errors on the site, or have general
- questions about climate scenarios that we can add to our FAQs, then please contact the DDC management
- at: <a href="mailto:support@ceda.ac.uk">support@ceda.ac.uk.</a>
- We will do our best to reply.</p>
+ questions about climate scenarios that we can add to our FAQs, then please contact the <a href="https://metadata.atlassian.net/servicedesk/customer/portal/6">helpdesk</a></p>
  </div>
