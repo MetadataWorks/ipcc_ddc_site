@@ -18,7 +18,7 @@ logos: ssi12/logos/dkrz.html
 <p> For groups that do not have the capability to download IPCC AR5 data directly from the Data Distribution Center of the IPCC, a data subset is made available on DVD or USB flash drive media for AR4 and AR5 climate model data. Due to the amount of data these service has to be restricted to selected scenarios, the core variables in monthly mean resolution of the DDC data sets, and to a single run per model. The data formats are GRIB for AR4 and NetCDF for AR5 (<a href="formats.html">Information on data formats</a>).</p>
 
 <h2>Areas</h2>
-<p>The climate model data is provided per subregions of the globe (areas).  The offered 9 data areas are:</p>
+<p>The climate model data is provided per subregions of the globe (areas). The offered 9 data areas are:</p>
 <ul>
 <li>Africa</li>
 <li>North America</li>
@@ -40,5 +40,5 @@ logos: ssi12/logos/dkrz.html
 </ul>
 
 <h2>Additional Information</h2>
-<p>Additional information on area extensions, included experiments and variables in the climate model data provided on storage media by the <a target="_blank" href="http://wdc-climate.de" title="WDC Climate">WDC Climate</a> is available at <a target="_blank" href="http://www.dkrz.de/daten-en/wdcc/projects_cooperations/ipcc-data/order-ipcc-data-on-dvd" title="Storage Media Order Information">IPCC-DDC Data Order Information</a>.</p>
+<p>Additional information on area extensions, included experiments and variables in the climate model data provided on storage media by the <a target="_blank" href="http://wdc-climate.de" title="WDC Climate">WDC Climate</a> is available at <a target="_blank" href="https://www.dkrz.de/up/services/data-management/projects-and-cooperations/ipcc-data/order-ipcc-data-on-dvd" title="Storage Media Order Information">IPCC-DDC Data Order Information</a>.</p>
 
