@@ -15,7 +15,7 @@ w3cValid: yes
      <td style="height:1pt;" valign="top">
        <div id="content">
  <div id="pagetit">
-   <h1 align="center">Welcome to the IPCC Data Distribution Centre</h1>
+   <h1 align="center">This is the Archived version of the IPCC Data Distribution Centre website: The current site is <a href="https://ipcc-preprod.metadatadev.co.uk/">here</a></h1>
  </div>
    <!-- End of Page Title Block -->
  
