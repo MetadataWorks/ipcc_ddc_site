@@ -1,0 +1,19 @@
+I"M<div id="pagetitle">
+ <h1 align="center">CCSR/NIES GCM Land/Sea Mask</h1>
+ </div>
+<p><!-- End of Page Title Block --></p>
+
+<p><!-- Insert Land/Sea Mask Here --></p>
+
+<p align="center"><img src="ccsr_landsea.gif" alt="Land-sea mask" width="600" height="324" align="middle" /></p>
+
+<p>Download image as an <a href="ccsr_landsea.eps">.EPS File</a><a href="ccsr_landsea.eps">
+ </a>(800k) or <a href="ccsr_landsea.pdf">.PDF File</a> (27k).  Alternatively, download
+ the mask in <a href="ccsr_landsea.txt">ASCII</a> format (3k).</p>
+
+<p>&nbsp;</p>
+
+<p></p>
+
+<p><!-- end of center column --></p>
+:ET

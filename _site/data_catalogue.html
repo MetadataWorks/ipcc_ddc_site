@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>IPCC | Data</title>
+	<!-- Styles-->
+	<style>
+		.thames {
+		  width: 650px;
+		  padding: 50px;
+		  border: 1px solid gray;
+		  margin: 0;
+		}
+		</style>
+	<link href="./assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="./assets/css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- Favicon-->
+	<link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+
+<body>
+	<div class="app">
+		<header>
+			<div class="header-container" id="back">
+				<div class="container">
+					<div class="top-header-section d-flex justify-content-between align-items-center">
+						<div class="left"><a href="index.html">HOME </a> <a href="archive">OLD
+								SITE </a><a href="https://metadata.atlassian.net/servicedesk/customer/portal/6">HELP
+							</a><a href="https://interactive-atlas.ipcc.ch/">ATLAS</a></div>
+						<div class="right d-flex align-items-center">
+							<!--<div class="d-flex flex-row"><img src="./assets/images/search.svg" alt="MetadataWorks" onclick="openS('form-search', 'close-s', 'open')">
+                  <input type="text" placeholder="Search..." id="form-search">
+                </div><a href="#" onclick="openS('form-search', 'close-s', 'open')" id="open">SEARCH</a><a href="#" onclick="closeS('form-search', 'close-s', 'open')" id="close-s">BACK</a>
+              -->
+						</div>
+					</div>
+				</div>
+				<div class="header-section">
+					<div class="container">
+						<div class="header-section-padding d-flex justify-content-between align-items-center">
+							<div class="header-logo"><a href="index.html"><img class="logo"
+										src="./assets/images/logo.svg" alt="MetadataWorks"></a></div>
+							<div class="header-menu">
+								<ul class="nav">
+									<li class="nav-item"><a class="nav-link" href="data_catalogue.html">DATA</a>
+									</li>
+									<li class="nav-item"><a class="nav-link"
+											href="http://ipcc-data.org/guidelines/index.html">GUIDANCE</a></li>
+									<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+								</ul>
+								<div class="mobile-menu"><span></span><span></span><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-content landing-page">
+			<section class="data">
+				<div class="data-hero">
+					<div class="ornaments"><img src="./assets/images/ornaments-data.svg" alt="MetadataWorks"></div>
+					<div class="container">
+						<h1>Discover and Understand Climate Change Data
+							<div class="ornaments-kotak"> <img src="./assets/images/ornaments-kotak.svg"
+									alt="MetadataWorks"></div>
+						</h1>
+						<br>
+						<div class="about-box p-4">
+							<p class="pl-3">A new data catalogue for the IPCC DDC is in development.<br>
+								You can use the search bar below to explore the limited number of datasets
+								made available in the  data catalogue at this stage, including the data from
+								the Summary for Policymakers of the Working Group I Contribution to the IPCC
+								Sixth Assessment Report.<br>
+								Our old site continues to offer a wealth of data, that will be transitioned
+								into the data catalogue over time.  Key links include:</p>
+							</p>
+							<ul>
+								<li>GCM Input data for previous reports available <a
+										href="https://ipcc-data.org/sim/gcm_monthly/">here</a></li>
+								<li>Socioeconomic data and scenarios (including AR4 and AR5 observed
+									impacts) available <a href="http://sedac.ipcc-data.org/">here</a></li>
+							</ul>
+						</div>
+
+						<div class="box-search">
+							<form action="https://ipcc.metadata.works/browser/search">
+								<input name="search-term" autocomplete="off" placeholder="Search all datasets"
+									class="searchbar" type="text" value="" pattern="\S+.*" maxlength="50" required>
+								<button> <img src="./assets/images/search-blue.svg" alt="MetadataWorks">SEARCH</button>
+							</form>
+						</div>
+						<div class="box-category">
+							<button><a style="color: #fff; text-decoration: none;" href="https://ipcc.metadata.works/browser/search">BROWSE
+									ALL</a></button>
+							<button><a style="color: #fff; text-decoration: none;"
+									href="https://ipcc.metadata.works/browser/search?search-term=WG-1">WG-1</a></button>
+							<button><a style="color: #fff; text-decoration: none;"
+									href="https://ipcc.metadata.works/browser/search?search-term=Temperature">Temperature</a></button>
+							<button><a style="color: #fff; text-decoration: none;"
+									href="https://ipcc.metadata.works/browser/search?search-term=Precipitation">Precipitation</a></button>
+						</div>
+						<div class="box-grid">
+							<div class="item">
+								<h3>Findability</h3>
+								<p>Discover data used by the IPCC and their partners</p>
+								<!--<a href="#">BROWSE DATABASE</a>-->
+							</div>
+							<div class="item">
+								<h3>Accessibility</h3>
+								<p>Understand how IPCC data is shared and accessed</p>
+								<!--<a href="#">READ MORE</a>-->
+							</div>
+							<div class="item">
+								<h3>Interoperability</h3>
+								<p>Explore the data standards being used to link data</p>
+								<!--<a href="#">VIEW STANDARDS</a>-->
+							</div>
+							<div class="item">
+								<h3>Reusability</h3>
+								<p>Establish relevance and share knowledge to maximise data utility</p>
+								<!--<a href="#">VIEW REFERENCE DATA</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="footer-top">
+					<div class="container">
+						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column-reverse">
+							<div class="left"> <a href="copyright.html">COPYRIGHT </a><a
+									href="disclaimer.html">DISCLAIMER</a><a
+									href="privacy-policy.html">PRIVACY
+									POLICY</a></div>
+							<div class="right"><img class="footer-logo" src="./assets/images/logo-footer.svg"
+									alt="MetadataWorks"><img class="footer-who" src="./assets/images/who.svg"
+									alt="MetadataWorks"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+							<div class="left d-flex">
+								<div class="image margin-right"><a
+										href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
+											src="./assets/images/bottom-footer-1.svg"
+											alt="Department for Business, Energy and Industrial Strategy"></a></div>
+								<div class="image"><a href="https://www.dkrz.de/"><img
+											src="./assets/images/bottom-footer-2.svg" alt="DKRZ"></a></div>
+								<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
+											src="./assets/images/CIESIN-CCS_logo_sm.png"
+											alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
+								</div>
+								<div class="image"><a href="https://www.nasa.gov/"><img
+											src="./assets/images/bottom-footer-4.png" alt="NASA"></a></div>
+								<div class="image"><a href="https://ifca.unican.es/"><img
+											src="./assets/images/CSIF-IFCA.png"
+											alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
+							</div>
+							<div class="right"><a href="https://metadataworks.co.uk/"><img
+										src="./assets/images/bottom-footer-5.svg" alt="MetadataWorks"></a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- Scripts-->
+	<script src="./assets/vendors/jquery/jquery.min.js"></script>
+	<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+	<script src="./assets/vendors/slick/slick.min.js"></script>
+	<script src="./assets/js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+I"<div id="pagetitle">
+ <h1 align="center">HadCM3 GCM Model Information </h1>
+ </div>
+<p><!-- End of Page Title Block --></p>
+
+<p><!-- Insert Model Info Here --></p>
+<p><b>Background Information</b></p>
+
+<p>The experiments performed at the Hadley Centre for the Third Assessment Report
+ use the HadCM3 model, which is the successor to HadCM2 used in the Second
+ Assessment Report.
+ 
+ <p>HadCM3, like HadCM2, has a spatial resolution of <a href="hadcm3_grid.html">2.5&deg;
+ x 3.75&deg; (latitude by longitude) </a>and the representation
+ produces a grid box resolution of 96 x 73 grid cells. This produces
+ a surface spatial resolution of about 417km x 278 km reducing
+ to 295 x 278km at 45 degrees North and South (comparable to a
+ spectral resolution of T42).</p>
+ 
+ 
+ <p>&nbsp;</p>
+ 
+ <p><b>Links</b></p>
+ 
+ <a href="http://www.metoffice.gov.uk/climate-change/resources/hadley">UKMO Hadley Centre</a>
+ 
+ <p><b>References</b></p>
+ 
+ 
+ <p>Gordon, C., C. Cooper, C.A. Senior, H.T. Banks, J.M. Gregory,
+ T.C. Johns, J.F.B. Mitchell and R.A. Wood, <b>2000</b>.
+ The simulation of SST, sea ice extents and ocean heat transports in a version of the Hadley Centre coupled model without flux adjustments.
+ <i>Clim. Dyn.</i>, <b>16</b>, 147-168.<br /></p>
+ 
+ <p>
+ Pope, V., M.L. Gallani, P.R. Rowntree, R.A. Stratton, <b>2000</b>.
+ The impact of new physical parameterizations in the Hadley Centre climate model: HadAM3.
+ <i>Clim. Dyn.</i>, <b>16</b>, 123-146.<p /> <br />
+ 
+ <br />
+ 
+ <p>&nbsp;</p>
+ 
+ 
+ 
+ <p></p>
+ 
+ <!-- end of center column -->
+</p></p>
+:ET
