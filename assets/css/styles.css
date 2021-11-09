@@ -1484,11 +1484,13 @@ footer .footer-bottom .image {
 .copyright-hero h1 {
     position: relative;
     margin-left: 80px;
+    margin-bottom: 80px;
 }
 @media (max-width: 992px) {
     .copyright-hero h1 {
         width: 100%;
         margin: 0;
+        margin-bottom: 50px;
     }
 }
 .copyright-hero h1::before {
