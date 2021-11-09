@@ -1749,6 +1749,9 @@ footer .footer-bottom .image {
     width: 100%;
 }
 
+.left > div > a > img {
+    max-width: 230px;
+}
 button {
     background: #fff;
     border: none;
