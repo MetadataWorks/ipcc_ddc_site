@@ -1674,13 +1674,11 @@ footer .footer-bottom .image {
     }
 }
 .copyright-hero .box-content {
-    margin-top: 210px;
     padding: 80px;
     background: #f6f7fb;
 }
 @media (max-width: 992px) {
     .copyright-hero .box-content {
-        margin-top: 110px;
         padding: 28px 24px;
     }
 }
