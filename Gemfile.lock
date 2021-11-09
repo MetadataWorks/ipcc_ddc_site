@@ -69,7 +69,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-theme-modernist (~> 0.2)
-  jekyll_constant_values (~> 0.1.0)
+  jekyll_constant_values
   webrick (~> 1.7)
 
 BUNDLED WITH
