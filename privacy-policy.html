@@ -143,6 +143,26 @@
 	<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendors/slick/slick.min.js"></script>
 	<script src="./assets/js/scripts.min.js"></script>
+
+	<!-- start of google tracker script -->
+	<script type="text/javascript">
+		var GOOGLE_ANALYTICS_TRACKING_ID = "G-0M26637VMX"; // "ipcc-preprod-browser" GA Property
+
+		function initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID) {
+			var head = document.getElementsByTagName('head')[0];
+			var googleAnalyticsScript = document.createElement('script');
+			googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=" + GOOGLE_ANALYTICS_TRACKING_ID;
+			head.appendChild(googleAnalyticsScript);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			window.gtag = gtag;
+			window.gtag('js', new Date());
+			window.gtag('config', GOOGLE_ANALYTICS_TRACKING_ID);
+		}
+
+		initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID);
+	</script>
+	<!-- end of google tracker script -->
 </body>
 
 </html>

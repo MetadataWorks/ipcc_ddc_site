@@ -62,13 +62,21 @@
 
    <!-- start of google tracker script -->
    <script type="text/javascript">
-   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-   </script>
-   <script type="text/javascript">
-      var pageTracker = _gat._getTracker("UA-5141437-1");
-   pageTracker._initData();
-   pageTracker._trackPageview();
+       var GOOGLE_ANALYTICS_TRACKING_ID = "G-0M26637VMX"; // "ipcc-preprod-browser" GA Property
+
+       function initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID) {
+           var head = document.getElementsByTagName('head')[0];
+           var googleAnalyticsScript = document.createElement('script');
+           googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=" + GOOGLE_ANALYTICS_TRACKING_ID;
+           head.appendChild(googleAnalyticsScript);
+           window.dataLayer = window.dataLayer || [];
+           function gtag() { dataLayer.push(arguments); }
+           window.gtag = gtag;
+           window.gtag('js', new Date());
+           window.gtag('config', GOOGLE_ANALYTICS_TRACKING_ID);
+       }
+
+       initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID);
    </script>
    <!-- end of google tracker script -->
 </body>
