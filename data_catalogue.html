@@ -91,7 +91,7 @@
 						<div class="box-search">
 							<form action="https://ipcc.metadata.works/browser/search" class="searchbar-container">
 								<input name="search-term" autocomplete="off" placeholder="Search all datasets"
-									class="searchbar" type="text" value="" pattern="\S+.*" maxlength="100" size="50" required>
+									class="searchbar" type="text" value="" pattern="\S+.*" maxlength="100" required>
 								<button class="search-btn"> <img src="./assets/images/search-blue.svg" alt="MetadataWorks">SEARCH</button>
 							</form>
 						</div>
@@ -178,11 +178,16 @@
 		}
 
 		.searchbar {
+			flex: 1 1 auto;
 			outline: none;
 		}
 
 		div.box-search:focus-within {
 			box-shadow: 0 0 0 3px white;
+		}
+
+		.search-btn {
+			margin-left: 30px;
 		}
 
 		.search-btn:focus {
