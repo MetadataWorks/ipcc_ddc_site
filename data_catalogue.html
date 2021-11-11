@@ -51,7 +51,7 @@
 									<li class="nav-item"><a class="nav-link" href="data_catalogue.html">DATA</a>
 									</li>
 									<li class="nav-item"><a class="nav-link"
-											href="https://ipcc-data.org/guidelines/index.html">GUIDANCE</a></li>
+											href="guidelines/index.html">GUIDANCE</a></li>
 									<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
 								</ul>
 								<div class="mobile-menu"><span></span><span></span><span></span></div>
@@ -82,7 +82,7 @@
 							</p>
 							<ul>
 								<li>GCM Input data for previous reports available <a
-										href="https://ipcc-data.org/sim/gcm_monthly/">here</a></li>
+										href="sim/gcm_monthly/">here</a></li>
 								<li>Socioeconomic data and scenarios (including AR4 and AR5 observed
 									impacts) available <a href="http://sedac.ipcc-data.org/">here</a></li>
 							</ul>
@@ -91,7 +91,7 @@
 						<div class="box-search">
 							<form action="https://ipcc.metadata.works/browser/search" class="searchbar-container">
 								<input name="search-term" autocomplete="off" placeholder="Search all datasets"
-									class="searchbar" type="text" value="" pattern="\S+.*" maxlength="50" required>
+									class="searchbar" type="text" value="" pattern="\S+.*" maxlength="100" required>
 								<button class="search-btn"> <img src="./assets/images/search-blue.svg" alt="MetadataWorks">SEARCH</button>
 							</form>
 						</div>
@@ -149,22 +149,22 @@
 							<div class="left d-flex align-items-center">
 								<div class="image margin-right "><a
 									href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
-										src="./assets/images/bottom-footer-1.svg"
+										src="assets/images/bottom-footer-1-department-for-business-energy-and-industrial-strategy.svg"
 										alt="Department for Business, Energy and Industrial Strategy"></a></div>
 								<div class="image"><a href="https://www.dkrz.de/"><img
-									src="./assets/images/bottom-footer-2.svg" alt="DKRZ"></a></div>
+										src="assets/images/bottom-footer-2-dkrz.svg" alt="DKRZ"></a></div>
 								<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
 									src="./assets/images/CIESIN-CCS_logo_sm.png"
 									alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
 								</div>
 								<div class="image"><a href="https://www.nasa.gov/"><img
-									src="./assets/images/bottom-footer-4.png" alt="NASA"></a></div>
+										src="assets/images/bottom-footer-4-nasa.png" alt="NASA"></a></div>
 								<div class="image"><a href="https://ifca.unican.es/"><img
-									src="./assets/images/CSIF-IFCA.png"
+									src="assets/images/CSIC-IFCA.png"
 									alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
 							</div>
 							<div class="right align-items-center"><a href="https://metadataworks.co.uk/"><img
-								src="./assets/images/bottom-footer-5.svg" alt="MetadataWorks"></a></div>
+									src="assets/images/bottom-footer-6-metadataworks.svg" alt="MetadataWorks"></a></div>
 						</div>
 					</div>
 				</div>
@@ -178,12 +178,16 @@
 		}
 
 		.searchbar {
-			width: 100%;
+			flex: 1 1 auto;
 			outline: none;
 		}
 
 		div.box-search:focus-within {
 			box-shadow: 0 0 0 3px white;
+		}
+
+		.search-btn {
+			margin-left: 30px;
 		}
 
 		.search-btn:focus {
