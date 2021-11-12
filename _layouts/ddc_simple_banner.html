@@ -20,7 +20,13 @@
   <script src="./assets/vendors/jquery/jquery.min.js"></script>
   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/vendors/slick/slick.min.js"></script>
-  <script src="./assets/js/analytics.js"></script>
+
+  <!-- Header Block -->
+  {% include {{ page.banner }} %}
+  <!-- End of Header Block -->
+
+  <!-- Center Column -->
+
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content" style="margin-top: 50%;">
@@ -48,13 +54,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Header Block -->
-  {% include {{ page.banner }} %}
-  <!-- End of Header Block -->
-
-  <!-- Center Column -->
-
   {{ content }}
 
   <!-- start of google tracker script -->
@@ -72,6 +71,7 @@
     pageTracker._trackPageview();
   </script>
   <!-- end of google tracker script -->
+  <script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>

@@ -20,34 +20,6 @@
   <script src="./assets/vendors/jquery/jquery.min.js"></script>
   <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/vendors/slick/slick.min.js"></script>
-  <script src="./assets/js/analytics.js"></script>
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" style="margin-top: 50%;">
-        <div class="modal-header">
-          <h5 class="modal-title" style="color: rgb(27, 47, 100); font-weight: 600; font-family: 'Poppins'">We
-            use Cookies</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
-          <p>We use tools, such as cookies, to enable essential services and functionality on our site and to
-            collect data on how visitors interact with our site, products and services. By opting in, you
-            agree to our use of these tools for analytics. </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn"
-            style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'" onclick="acceptCookie()"
-            data-dismiss="modal">ACCEPT</button>
-          <button type="button" class="btn" data-dismiss="modal"
-            style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
-            onclick="declineCookie()">NO,
-            THANKS</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Header Block -->
    <div id="hdr-c">
@@ -117,6 +89,33 @@
 
   <!-- Center Column -->
 
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="margin-top: 50%;">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: rgb(27, 47, 100); font-weight: 600; font-family: 'Poppins'">We
+            use Cookies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
+          <p>We use tools, such as cookies, to enable essential services and functionality on our site and to
+            collect data on how visitors interact with our site, products and services. By opting in, you
+            agree to our use of these tools for analytics. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn"
+            style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'" onclick="acceptCookie()"
+            data-dismiss="modal">ACCEPT</button>
+          <button type="button" class="btn" data-dismiss="modal"
+            style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+            onclick="declineCookie()">NO,
+            THANKS</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
 <tr style="margin:0;padding:0;border:0;">
 <td style="margin:0;padding:0;border:0;height:1pt;width:150pt;background:#5492CD;" valign="top">
@@ -771,6 +770,7 @@ Location: <a href="/index.html">DDC Home</a> &gt; <a href="/sim/gcm_clim/">Model
     pageTracker._trackPageview();
   </script>
   <!-- end of google tracker script -->
+  <script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>

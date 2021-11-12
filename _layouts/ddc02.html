@@ -23,7 +23,10 @@
    <script src="./assets/vendors/jquery/jquery.min.js"></script>
    <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
    <script src="./assets/vendors/slick/slick.min.js"></script>
-   <script src="./assets/js/analytics.js"></script>
+   <!-- Header Block -->
+   {% include {{ page.banner }} %}
+   <!-- End of Header Block -->
+
    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
          <div class="modal-content" style="margin-top: 50%;">
@@ -35,7 +38,8 @@
                </button>
             </div>
             <div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
-               <p>We use tools, such as cookies, to enable essential services and functionality on our site and to
+               <p>We use tools, such as cookies, to enable essential services and functionality on our site and
+                  to
                   collect data on how visitors interact with our site, products and services. By opting in, you
                   agree to our use of these tools for analytics. </p>
             </div>
@@ -51,10 +55,6 @@
          </div>
       </div>
    </div>
-   <!-- Header Block -->
-   {% include {{ page.banner }} %}
-   <!-- End of Header Block -->
-
    <!-- Center Column -->
    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
       <tr style="margin:0;padding:0;border:0;">
@@ -95,6 +95,7 @@
       </tr>
    </table>
 
+   <script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>

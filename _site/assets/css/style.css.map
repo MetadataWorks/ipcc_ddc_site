@@ -3,8 +3,8 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../../../usr/local/lib/ruby/gems/3.0.0/gems/jekyll-theme-modernist-0.2.0/_sass/jekyll-theme-modernist.scss",
-		"../../../../usr/local/lib/ruby/gems/3.0.0/gems/jekyll-theme-modernist-0.2.0/_sass/rouge-base16-dark.scss"
+		"../../../../../Library/Ruby/Gems/2.6.0/gems/jekyll-theme-modernist-0.2.0/_sass/jekyll-theme-modernist.scss",
+		"../../../../../Library/Ruby/Gems/2.6.0/gems/jekyll-theme-modernist-0.2.0/_sass/rouge-base16-dark.scss"
 	],
 	"sourcesContent": [
 		"@import \"jekyll-theme-modernist\";\n",
