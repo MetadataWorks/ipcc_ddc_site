@@ -22,7 +22,6 @@ if (document.cookie === 'google_analytics_user_consented=yes') {
     window.gtag = gtag;
 } else if (!document.cookie.includes('google_analytics_user_consented')) {
     $('#myModal').modal('show');
-    console.log('Fluodal js line is running!');
 }
 
 function setUpCookieExpiration(days) {
