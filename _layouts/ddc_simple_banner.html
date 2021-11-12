@@ -3,18 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <script>
-    var head = document.getElementsByTagName('head')[0];
-    var googleAnalyticsScript = document.createElement('script');
-    googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-2WXQ7WQ7JW";
-    head.appendChild(googleAnalyticsScript);
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    window.gtag = gtag;
-  </script>
   <title>{{ page.title }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!-- Apparently google uses description info in the search output page-->
@@ -28,14 +16,7 @@
 </head>
 
 <body class="{{ page.bodyclass }}">
-  <script>
-    function acceptCookie() {
-      var date = new Date();
-      date.setTime(date.getTime() + 28 * 24 * 60 * 60 * 1000)
-      var expires = '; expires' + date.toUTCString()
-      document.cookie = "google_analytics_user_consented=yes" + expires + "; path=/";
-    }
-  </script>
+  <script src="./assets/js/analytics.js"></script>
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content" style="margin-top: 50%;">
@@ -56,7 +37,8 @@
             style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'" onclick="acceptCookie()"
             data-dismiss="modal">ACCEPT</button>
           <button type="button" class="btn" data-dismiss="modal"
-            style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'">NO,
+            style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+            onclick="declineCookie()">NO,
             THANKS</button>
         </div>
       </div>
@@ -69,27 +51,23 @@
 
   <!-- Center Column -->
 
- {{ content }}
-  
-   <!-- start of google tracker script -->
-   <script type="text/javascript">
-       var GOOGLE_ANALYTICS_TRACKING_ID = "G-2WXQ7WQ7JW"; // "ipcc-[production-browser]" GA Property
+  {{ content }}
 
-       function initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID) {
-           var head = document.getElementsByTagName('head')[0];
-           var googleAnalyticsScript = document.createElement('script');
-           googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=" + GOOGLE_ANALYTICS_TRACKING_ID;
-           head.appendChild(googleAnalyticsScript);
-           window.dataLayer = window.dataLayer || [];
-           function gtag() { dataLayer.push(arguments); }
-           window.gtag = gtag;
-           window.gtag('js', new Date());
-           window.gtag('config', GOOGLE_ANALYTICS_TRACKING_ID);
-       }
-
-       initialiseGoogleAnalytics(GOOGLE_ANALYTICS_TRACKING_ID);
-   </script>
-   <!-- end of google tracker script -->
+  <!-- start of google tracker script -->
+  <script type="text/javascript">
+    var GOOGLE_ANALYTICS_TRACKING_ID = "G-2WXQ7WQ7JW"; // "ipcc-[production-browser]" GA Property
+  </script>
+  <!-- start of google tracker script -->
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5141437-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+  <!-- end of google tracker script -->
 </body>
 
 </html>
