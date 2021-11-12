@@ -1176,6 +1176,154 @@ footer .footer-bottom .image {
     color: #4f4d58;
     margin: 0;
 }
+
+.about-box-background {
+    background: #f6f7fb;
+    padding: 80px;
+}
+@media (max-width: 992px) {
+    .about-box-background {
+        padding: 24px;
+    }
+}
+.about-box-background h2 {
+    padding-bottom: 55px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #6191c8;
+}
+@media (max-width: 992px) {
+    .about-box-background h2 {
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+    }
+}
+.about-box-background p {
+    margin: 50px 0 80px;
+}
+@media (max-width: 992px) {
+    .about-box-background p {
+        margin: 28px 0 32px;
+    }
+}
+.about-box-background p a {
+    font-weight: 600;
+    color: #6191c8;
+}
+.about-box-background .about-box-1 {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 10px 100px rgba(168, 168, 168, 0.2);
+    box-shadow: 0px 10px 100px rgba(168, 168, 168, 0.2);
+    padding: 50px;
+}
+@media (max-width: 992px) {
+    .about-box-background .about-box-1 {
+        padding: 30px 20px;
+    }
+}
+.about-box-background .about-box-1 ul {
+    padding: 0;
+    margin: 0;
+}
+.about-box-background .about-box-1 ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4f4d58;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    padding-left: 25px;
+    list-style: none;
+    position: relative;
+}
+@media (max-width: 992px) {
+    .about-box-background .about-box-1 ul li {
+        font-size: 13px;
+        line-height: 23px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+.about-box-background .about-box-1 ul li:last-child {
+    margin: 0;
+    border: none;
+    padding-bottom: 0;
+}
+.about-box-background .about-box-1 ul li::before {
+    content: '\2022';
+    color: #6191c8;
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    left: 0;
+}
+.about-box-background .about-box-2 {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 10px 100px rgba(168, 168, 168, 0.2);
+    box-shadow: 0px 10px 100px rgba(168, 168, 168, 0.2);
+    padding: 60px 80px;
+    width: calc(100% + 80px);
+    margin-left: -80px;
+    position: relative;
+    margin-bottom: 80px;
+}
+@media (max-width: 992px) {
+    .about-box-background .about-box-2 {
+        padding: 24px 48px 24px 24px;
+        width: calc(100% + 24px);
+        margin-left: -24px;
+        margin-bottom: 24px;
+    }
+}
+.about-box-background .about-box-2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 89px;
+    width: 40px;
+    height: 5px;
+    background: #6191c8;
+}
+@media (max-width: 992px) {
+    .about-box-background .about-box-2::before {
+        width: 12px;
+        height: 3px;
+        top: 39px;
+    }
+}
+.about-box-background .about-box-2::after {
+    content: '';
+    position: absolute;
+    right: -80px;
+    top: 46%;
+    width: 80px;
+    height: 10px;
+    background: #6191c8;
+}
+.about-box-background .about-box-2 h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.about-box-background .about-box-2 p {
+    margin: 15px 0 0;
+}
+.about-box-background-2 {
+    margin-top: 10px;
+    background: #f6f7fb;
+    padding: 80px 160px 80px 80px;
+}
+@media (max-width: 992px) {
+    .about-box-background-2 {
+        padding: 24px;
+    }
+}
+.about-box-background-2 h2 {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 992px) {
     .about-box ul {
         font-size: 15px;
@@ -1484,11 +1632,13 @@ footer .footer-bottom .image {
 .copyright-hero h1 {
     position: relative;
     margin-left: 80px;
+    margin-bottom: 80px;
 }
 @media (max-width: 992px) {
     .copyright-hero h1 {
         width: 100%;
         margin: 0;
+        margin-bottom: 50px;
     }
 }
 .copyright-hero h1::before {
@@ -1524,13 +1674,11 @@ footer .footer-bottom .image {
     }
 }
 .copyright-hero .box-content {
-    margin-top: 210px;
     padding: 80px;
     background: #f6f7fb;
 }
 @media (max-width: 992px) {
     .copyright-hero .box-content {
-        margin-top: 110px;
         padding: 28px 24px;
     }
 }
@@ -1749,6 +1897,9 @@ footer .footer-bottom .image {
     width: 100%;
 }
 
+.left > div > a > img {
+    max-width: 230px;
+}
 button {
     background: #fff;
     border: none;

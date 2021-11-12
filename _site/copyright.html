@@ -17,14 +17,40 @@
 </head>
 
 <body>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;">
+				<div class="modal-header">
+					<h5 class="modal-title" style="color: rgb(27, 47, 100); font-weight: 600; font-family: 'Poppins'">We
+						use Cookies</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
+					<p>We use tools, such as cookies, to enable essential services and functionality on our site and to
+						collect data on how visitors interact with our site, products and services. By opting in, you
+						agree to our use of these tools for analytics. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn"
+						style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'"
+						onclick="acceptCookie()" data-dismiss="modal">ACCEPT</button>
+					<button type="button" class="btn" data-dismiss="modal"
+						style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+						onclick="declineCookie()">NO,
+						THANKS</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="app">
 		<header>
 			<div class="header-container" id="back">
 				<div class="container">
 					<div class="top-header-section d-flex justify-content-between align-items-center">
 						<div class="left">
-							<div class="left"><a href="index.html">HOME </a> <a
-									href="archive">OLD SITE </a><a
+							<div class="left"><a href="index.html">HOME </a> <a href="archive">OLD SITE </a><a
 									href="https://metadata.atlassian.net/servicedesk/customer/portal/6">HELP </a><a
 									href="https://interactive-atlas.ipcc.ch/">ATLAS</a></div>
 							<div class="right d-flex align-items-center">
@@ -35,26 +61,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="header-section">
-						<div class="container">
-							<div class="header-section-padding d-flex justify-content-between align-items-center">
-								<div class="header-logo"><a href="index.html"><img class="logo"
-											src="./assets/images/logo.svg" alt="MetadataWorks"></a></div>
-								<div class="header-menu">
-									<ul class="nav">
-										<li class="nav-item"><a class="nav-link"
-												href="data_catalogue.html">DATA</a></li>
-										<li class="nav-item"><a class="nav-link"
-												href="http://ipcc-data.org/guidelines/index.html">GUIDANCE</a></li>
-										<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a>
-										</li>
-									</ul>
-									<div class="mobile-menu"><span></span><span></span><span></span></div>
-								</div>
+				</div>
+				<div class="header-section">
+					<div class="container">
+						<div class="header-section-padding d-flex justify-content-between align-items-center">
+							<div class="header-logo"><a href="index.html"><img class="logo"
+										src="./assets/images/logo.svg" alt="MetadataWorks"></a></div>
+							<div class="header-menu">
+								<ul class="nav">
+									<li class="nav-item"><a class="nav-link" href="data_catalogue.html">DATA</a></li>
+									<li class="nav-item"><a class="nav-link" href="guidelines/index.html">GUIDANCE</a>
+									</li>
+									<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a>
+									</li>
+								</ul>
+								<div class="mobile-menu"><span></span><span></span><span></span></div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		</header>
 		<div class="main-content landing-page">
 			<section class="copyright">
@@ -66,53 +92,54 @@
 									alt="MetadataWorks"></div>
 						</h1>
 						<!--div class="box-content"-->
-							<!--p> <b> IN DEVELOPMENT: </b><br>This section will contain an iframe linked to the
+						<!--p> <b> IN DEVELOPMENT: </b><br>This section will contain an iframe linked to the
 								https://www.ipcc.ch/copyright/ page </!--p-->
-								<iframe src="https://www.ipcc.ch/copyright/" width="100%" height="700" style="border:1px solid black;">
-								</iframe>
-							<!--<iframe width="1100" height="1100" src="https://www.ipcc.ch/copyright/" title="IPCC Copyright"></iframe>
+						<iframe src="https://www.ipcc.ch/copyright/" width="100%" height="700"
+							style="border:1px solid black;">
+						</iframe>
+						<!--<iframe width="1100" height="1100" src="https://www.ipcc.ch/copyright/" title="IPCC Copyright"></iframe>
 
                 <p>Unless otherwise stated, the information available on this website, including text, logos, graphics, maps, images and electronic downloads is the property of the IPCC DDC and is protected by intellectual property laws.<br><br>You may freely download and copy the material contained on this website for your personal, non-commercial use, without any right to resell or redistribute it or to compile or create derivative works there from, subject to more specific restrictions that may apply to specific materials. <br><br>Reproduction of limited number of figures or short excerpts of IPCC material is authorized free of charge and without formal written permission provided that the original source is properly acknowledged, with mention of the complete name of the report, the publisher and the numbering of the page(s) or the figure(s). Permission can only be granted to use the material exactly as it is in the report. Please be aware that figures cannot be altered in any way, including the full legend. For media use it is sufficient to cite the source while using the original graphic or figure. In line with established Internet usage, any external website may provide a hyperlink to the IPCC website or to any of its pages without requesting permission. <br><br>For any other use, permission is required. To obtain permission, please email a scanned copy of a letter on official letterhead addressed to the Secretary of the IPCC with all relevant details. All communications by mail should be addressed to: <br><br><span>IPCC Secretariat</span><br><span>World Meteorological Organization </span><br><span>7bis Avenue de la Paix, P.O. Box No. 2300 </span><br><span>CH-1211 Geneva 2, </span><br><span>Switzerland</span><br><br>All e-mail communications should be addressed to ipcc-sec@wmo.int.</p>
                 -->
-						
-				</div>
+
+					</div>
 			</section>
 			<footer>
 				<div class="footer-top">
 					<div class="container">
 						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column-reverse">
 							<div class="left"> <a href="copyright.html">COPYRIGHT </a><a
-									href="disclaimer.html">DISCLAIMER</a><a
-									href="privacy-policy.html">PRIVACY
+									href="disclaimer.html">DISCLAIMER</a><a href="privacy-policy.html">PRIVACY
 									POLICY</a></div>
 							<div class="right"><img class="footer-logo" src="./assets/images/logo-footer.svg"
-									alt="MetadataWorks"><img class="footer-who" src="./assets/images/who.svg"
-									alt="MetadataWorks"></div>
+									alt="IPCC logo"><img class="footer-who" src="./assets/images/who.svg"
+									alt="WMO | UNEP | 2007 Nobel Peace Prize winner logos"></div>
 						</div>
 					</div>
 				</div>
 				<div class="footer-bottom">
 					<div class="container">
 						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
-							<div class="left d-flex">
-								<div class="image margin-right"><a
+							<div class="left d-flex align-items-center">
+								<div class="image margin-right "><a
 										href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
-											src="./assets/images/bottom-footer-1.svg"
+											src="assets/images/bottom-footer-1-department-for-business-energy-and-industrial-strategy.svg"
 											alt="Department for Business, Energy and Industrial Strategy"></a></div>
 								<div class="image"><a href="https://www.dkrz.de/"><img
-											src="./assets/images/bottom-footer-2.svg" alt="DKRZ"></a></div>
+											src="assets/images/bottom-footer-2-dkrz.svg" alt="DKRZ"></a></div>
 								<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
 											src="./assets/images/CIESIN-CCS_logo_sm.png"
 											alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
 								</div>
 								<div class="image"><a href="https://www.nasa.gov/"><img
-											src="./assets/images/bottom-footer-4.png" alt="NASA"></a></div>
+											src="assets/images/bottom-footer-4-nasa.png" alt="NASA"></a></div>
 								<div class="image"><a href="https://ifca.unican.es/"><img
-											src="./assets/images/CSIF-IFCA.png"
+											src="assets/images/CSIC-IFCA.png"
 											alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
 							</div>
-							<div class="right"><a href="https://metadataworks.co.uk/"><img
-										src="./assets/images/bottom-footer-5.svg" alt="MetadataWorks"></a></div>
+							<div class="right align-items-center"><a href="https://metadataworks.co.uk/"><img
+										src="assets/images/bottom-footer-6-metadataworks.svg" alt="MetadataWorks"></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -124,6 +151,7 @@
 	<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendors/slick/slick.min.js"></script>
 	<script src="./assets/js/scripts.min.js"></script>
+	<script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>

@@ -1,22 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-   <title>IPCC 4th Assessment Report (2007): Model NASA-GISS-AOM; Scenario PICTL; Variable psl</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <!-- Apparently google uses description info in the search output page-->
-   <meta name="Description" content="Climate data from the Intergovernmental Panel on Climate Change (IPCC)
-   Assessment Reports"/>
-   <link rel="stylesheet" type="text/css" href="/css/ddc_style2012.css" />
-   <!-- link type="text/css" href="/css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" -->
-   <link rel="stylesheet" type="text/css" href="/css/ddc_data_style.css" />
-   <script src="/js/2013/jquery.min.js" type="text/javascript"></script>
-   <script src="/js/2013/jquery-ui.min.js" type="text/javascript"></script>
- </head>
+
+<head>
+  <title>IPCC 4th Assessment Report (2007): Model NASA-GISS-AOM; Scenario PICTL; Variable psl</title>
+  <link href="./assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script src="./assets/vendors/jquery/jquery.min.js"></script>
+  <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/vendors/slick/slick.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Apparently google uses description info in the search output page-->
+  <meta name="Description" content="Climate data from the Intergovernmental Panel on Climate Change (IPCC)
+   Assessment Reports" />
+  <link rel="stylesheet" type="text/css" href="/css/ddc_style2012.css" />
+  <!-- link type="text/css" href="/css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" -->
+  <link rel="stylesheet" type="text/css" href="/css/ddc_data_style.css" />
+  <script src="/js/2013/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/2013/jquery-ui.min.js" type="text/javascript"></script>
+</head>
 
 <body class="ddc">
+  <script src="./assets/js/analytics.js"></script>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="margin-top: 50%;">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: rgb(27, 47, 100); font-weight: 600; font-family: 'Poppins'">We
+            use Cookies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
+          <p>We use tools, such as cookies, to enable essential services and functionality on our site and to
+            collect data on how visitors interact with our site, products and services. By opting in, you
+            agree to our use of these tools for analytics. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn"
+            style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'" onclick="acceptCookie()"
+            data-dismiss="modal">ACCEPT</button>
+          <button type="button" class="btn" data-dismiss="modal"
+            style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+            onclick="declineCookie()">NO,
+            THANKS</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!-- Header Block -->
- <div id="hdr-c">
+  <!-- Header Block -->
+   <div id="hdr-c">
  <table width="100%" border="0" cellspacing="0" cellpadding="0">
  <tr>
  <td width="980" height="82" style="background-image: url('/img/Banner_01.jpg'); font-size:30px;text-indent:20px;">
@@ -79,11 +113,11 @@
  </table>
  </div>
 
-<!-- End of Header Block -->
+  <!-- End of Header Block -->
 
-   <!-- Center Column -->
+  <!-- Center Column -->
 
- <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
 <tr style="margin:0;padding:0;border:0;">
 <td style="margin:0;padding:0;border:0;height:1pt;width:150pt;background:#5492CD;" valign="top">
 
@@ -189,17 +223,22 @@ Location: <a href="/index.html">DDC Home</a> &gt; <a href="/sim/gcm_clim/">Model
 </div>
 <!-- End of Breadcrumb2 --></td></tr></table>
 
-  
-   <!-- start of google tracker script -->
-   <script type="text/javascript">
-   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-   </script>
-   <script type="text/javascript">
-      var pageTracker = _gat._getTracker("UA-5141437-1");
-   pageTracker._initData();
-   pageTracker._trackPageview();
-   </script>
-   <!-- end of google tracker script -->
+
+  <!-- start of google tracker script -->
+  <script type="text/javascript">
+    var GOOGLE_ANALYTICS_TRACKING_ID = "G-2WXQ7WQ7JW"; // "ipcc-[production-browser]" GA Property
+  </script>
+  <!-- start of google tracker script -->
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5141437-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+  <!-- end of google tracker script -->
 </body>
+
 </html>
