@@ -2,18 +2,6 @@
 <html style="scroll-behavior: smooth;" lang="en">
 
 <head>
-	<script>
-		var head = document.getElementsByTagName('head')[0];
-		var googleAnalyticsScript = document.createElement('script');
-		googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-2WXQ7WQ7JW";
-		head.appendChild(googleAnalyticsScript);
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		window.gtag = gtag;
-	</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -29,14 +17,6 @@
 </head>
 
 <body>
-	<script>
-		function acceptCookie() {
-			var date = new Date();
-			date.setTime(date.getTime() + 28 * 24 * 60 * 60 * 1000)
-			var expires = '; expires' + date.toUTCString()
-			document.cookie = "google_analytics_user_consented=yes" + expires + "; path=/";
-		}
-	</script>
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content" style="margin-top: 50%;">
@@ -57,7 +37,8 @@
 						style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'"
 						onclick="acceptCookie()" data-dismiss="modal">ACCEPT</button>
 					<button type="button" class="btn" data-dismiss="modal"
-						style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'">NO,
+						style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+						onclick="declineCookie()">NO,
 						THANKS</button>
 				</div>
 			</div>
@@ -88,8 +69,8 @@
 								<ul class="nav nav-light">
 									<li class="nav-item"><a class="nav-link" href="data_catalogue.html">DATA</a>
 									</li>
-									<li class="nav-item"><a class="nav-link"
-											href="guidelines/index.html">GUIDANCE</a></li>
+									<li class="nav-item"><a class="nav-link" href="guidelines/index.html">GUIDANCE</a>
+									</li>
 									<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
 								</ul>
 								<div class="mobile-menu"><span></span><span></span><span></span></div>
@@ -145,23 +126,24 @@
 						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
 							<div class="left d-flex align-items-center">
 								<div class="image margin-right "><a
-									href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
-										src="assets/images/bottom-footer-1-department-for-business-energy-and-industrial-strategy.svg"
-										alt="Department for Business, Energy and Industrial Strategy"></a></div>
+										href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
+											src="assets/images/bottom-footer-1-department-for-business-energy-and-industrial-strategy.svg"
+											alt="Department for Business, Energy and Industrial Strategy"></a></div>
 								<div class="image"><a href="https://www.dkrz.de/"><img
-										src="assets/images/bottom-footer-2-dkrz.svg" alt="DKRZ"></a></div>
+											src="assets/images/bottom-footer-2-dkrz.svg" alt="DKRZ"></a></div>
 								<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
 											src="./assets/images/CIESIN-CCS_logo_sm.png"
 											alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
 								</div>
 								<div class="image"><a href="https://www.nasa.gov/"><img
-										src="assets/images/bottom-footer-4-nasa.png" alt="NASA"></a></div>
+											src="assets/images/bottom-footer-4-nasa.png" alt="NASA"></a></div>
 								<div class="image"><a href="https://ifca.unican.es/"><img
-									src="assets/images/CSIC-IFCA.png"
-									alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
+											src="assets/images/CSIC-IFCA.png"
+											alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
 							</div>
 							<div class="right align-items-center"><a href="https://metadataworks.co.uk/"><img
-									src="assets/images/bottom-footer-6-metadataworks.svg" alt="MetadataWorks"></a></div>
+										src="assets/images/bottom-footer-6-metadataworks.svg" alt="MetadataWorks"></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -173,20 +155,8 @@
 	<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendors/slick/slick.min.js"></script>
 	<script src="./assets/js/scripts.min.js"></script>
-	<script>
-		if (document.cookie === "google_analytics_user_consented=yes") {
-			var head = document.getElementsByTagName('head')[0];
-			var googleAnalyticsScript = document.createElement('script');
-			googleAnalyticsScript.src = "https://www.googletagmanager.com/gtag/js?id=G-2WXQ7WQ7JW";
-			head.appendChild(googleAnalyticsScript);
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			window.gtag = gtag;
-		}
-		else {
-			$('#myModal').modal()
-		}
-	</script>
+	<script src="./assets/js/analytics.js"></script>
+
 </body>
 
 </html>
