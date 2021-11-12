@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="scroll-behavior: smooth;" lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -17,6 +17,33 @@
 </head>
 
 <body>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;">
+				<div class="modal-header">
+					<h5 class="modal-title" style="color: rgb(27, 47, 100); font-weight: 600; font-family: 'Poppins'">We
+						use Cookies</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="color: rgb(27, 47, 100) !important;font-family: 'Poppins'">
+					<p>We use tools, such as cookies, to enable essential services and functionality on our site and to
+						collect data on how visitors interact with our site, products and services. By opting in, you
+						agree to our use of these tools for analytics. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn"
+						style="background-color: rgb(34, 48, 82); color: white;font-family: 'Poppins'"
+						onclick="acceptCookie()" data-dismiss="modal">ACCEPT</button>
+					<button type="button" class="btn" data-dismiss="modal"
+						style="background-color: white; border: 2px solid rgb(34, 48, 82); color:rgb(34, 48, 82);font-family: 'Poppins'"
+						onclick="declineCookie()">NO,
+						THANKS</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="app">
 		<header>
 			<div class="header-container" id="back">
@@ -42,8 +69,8 @@
 								<ul class="nav">
 									<li class="nav-item"><a class="nav-link" href="data_catalogue.html">DATA</a>
 									</li>
-									<li class="nav-item"><a class="nav-link"
-											href="http://ipcc-data.org/guidelines/index.html">GUIDANCE</a></li>
+									<li class="nav-item"><a class="nav-link" href="guidelines/index.html">GUIDANCE</a>
+									</li>
 									<li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
 								</ul>
 								<div class="mobile-menu"><span></span><span></span><span></span></div>
@@ -67,7 +94,7 @@
 									<div class="ornaments-kotak"> <img src="./assets/images/ornaments-kotak.svg"
 											alt="MetadataWorks"></div>
 								</h1>
-								<button>SEE DETAILS</button>
+								<a href="#details"><button>SEE DETAILS</button></a>
 							</div>
 							<div class="about-right">
 								<!--<div class="image"> <img src="./assets/images/about-hero.png" alt="MetadataWorks"></div>-->
@@ -75,145 +102,146 @@
 						</div>
 					</div>
 				</div>
-				<div class="about-box">
+				<div>
 					<div class="container">
-						<div class="about-box-background">
-							<h2>The objectives of the IPCC are:</h2>
-							<div class="about-box-1">
-								<ul>
-									<li>Archive and provide transparency, traceability, and stability of data and
-										scenarios used by the IPCC in its reports, available at the DDC or elsewhere.
-									</li>
-									<li>Archive and provide transparency, traceability and stability of data and
-										scenarios underpinning key figures and tables, and headline statements in the
-										IPCC reports. </li>
-									<li>Collaborate as appropriate with data centres that hold data or provide functions
-										relevant to the IPCC in a transparent manner, under the oversight of the
-										TG-DATA, in close liaison with the three IPCC Working Group Bureaus (WGBs), to
-										provide information via IPCC websites relevant to data and scenarios.</li>
-									<li>Curate new datasets unavailable elsewhere and link to external data sets of
-										relevance.</li>
-									<li>Improve accessibility of Data Distribution Materials for supporting IPCC authors
-										and external users, especially in developing countries.</li>
-									<li>Contribute to sustainable structure established and approved by the IPCC to
-										provide observed and model data and information relevant at regional scales.
-									</li>
-								</ul>
-							</div>
-							<p>The Memorandum of Understanding for Operation of the IPCC Data Distribution Centre is
-								available <a href="#">here.</a></p>
-							<div class="about-box-2">
-								<h2>Who We Are</h2>
-								<p>The DDC operates under the oversight of TG-DATA, in close liaison with the three IPCC
-									Working Group Bureaus.</p>
-							</div>
-							<h2>The DDC is jointly managed by the DDC Partners:</h2>
-							<div class="about-box-1">
-								<ul>
-									<li>Center for International Earth Science Information Network (CIESIN, USA).
-										Managed by CHEN Bob and XING Xiaoshi.</li>
-									<li>Deutsches Klimarechenzentrum GmbH (DKRZ, Germany). Managed by STOCKHAUSE
-										Martina.</li>
-									<li>Consejo Superior de Investigaciones Científicas, Instituto de Física de
-										Cantabria (CSIC-IFCA, Spain). Managed by GUTIÉRREZ José Manuel and COFIÑO
-										Antonio.</li>
-									<li>MetadataWorks, on behalf of the UK Department for Business, Energy and
-										Industrial Strategy. Managed by IRWIN Courtney and MILWARD Adam.</li>
-								</ul>
-							</div>
+						<a id="details">
+							<div class="about-box-background">
+						</a>
+						<h2>The objectives of the IPCC are:</h2>
+						<div class="about-box-1">
+							<ul>
+								<li>Archive and provide transparency, traceability, and stability of data and
+									scenarios used by the IPCC in its reports, available at the DDC or elsewhere.
+								</li>
+								<li>Archive and provide transparency, traceability and stability of data and
+									scenarios underpinning key figures and tables, and headline statements in the
+									IPCC reports. </li>
+								<li>Collaborate as appropriate with data centres that hold data or provide functions
+									relevant to the IPCC in a transparent manner, under the oversight of the
+									TG-DATA, in close liaison with the three IPCC Working Group Bureaus (WGBs), to
+									provide information via IPCC websites relevant to data and scenarios.</li>
+								<li>Curate new datasets unavailable elsewhere and link to external data sets of
+									relevance.</li>
+								<li>Improve accessibility of Data Distribution Materials for supporting IPCC authors
+									and external users, especially in developing countries.</li>
+								<li>Contribute to sustainable structure established and approved by the IPCC to
+									provide observed and model data and information relevant at regional scales.
+								</li>
+							</ul>
 						</div>
-						<div class="about-box-background-2">
-							<h2>History of the DDC</h2>
-							<p>The initiative to establish a mechanism for dissemination of data grew out of discussions
-								on establishment of the Task Group on Scenarios for Climate Impact Assessment (TGCIA) at
-								the IPCC Workshop on Regional Climate Change Projections for Impact Assessment (London,
-								24-26 September 1996). This Task Group was formed in a Preliminary Planning Meeting
-								(Bracknell, 9-10 January 1997). The recommendation to establish a Data Distribution
-								Centre was formulated at this meeting and led to the decision on the First TGCIA Meeting
-								(Washington, 5-6 May 1997) to seek Bureau approval for a request to governments to
-								provide the necessary financial support to establish and maintain the DDC function.</p>
-							<br>
-							<p>The IPCC Data Distribution Centre (DDC) was formally established by the decisions at the
-								IPCC Bureau 14th Session (Maldives, 21 September 1997) and at the 13th IPCC Plenary
-								(Maldives, 22-28 September 1997). An Ad-Hoc Committee on the Data Distribution Centre
-								was formed to identify institutions to act as the DDC. Among several institutions
-								nominated by governments, Deutsches Klimarechenzentrum (DKRZ) in Germany and the
-								Climatic Research Unit (CRU) in the United Kingdom were selected as a shared DDC
-								operation.</p>
-							<br>
-							<p>The DDC was overseen by the IPCC TGCIA, which was renamed to the Task Group on Data and
-								Scenario Support for Impacts and Climate Analysis (TGICA) in 2003. The governance of the
-								DDC was reviewed by an Ad-Hoc task force in 2017/18, resulting in revised guidance and
-								objectives adopted at 47th IPCC Plenary (Paris,13-16 March 2018): new Terms of Reference
-								for the Task Group renamed in Task Group on Data Support for Climate Change Assessments
-								(TG-Data) and new Guidance for the core functions of the DDC.</p>
-							<br>
-							<p>Between 2000 and 2009, the German DDC was operated by the Model and Data Group of the Max
-								Planck Institute for Meteorology (MaD/MPI-M). The Center for International Earth Science
-								Information Network (CIESIN) in the USA was invited in the TGCIA third meeting (New
-								York, 15-17 May 2000) and in the 5th meeting (Barbados, 26-29 November 2001) to develop
-								socio-economic scenario data link to the DDC. CIESIN became a formal part of the DDC at
-								the TGCIA 6th meeting (Helsinki, 5-7 June 2002), which was reported to the 20th IPCC
-								Plenary (Paris, 19-21 February 2003). British Atmospheric Data Centre (BADC) was invited
-								to the TGICA 12th meeting (Exeter, 4-6 October 2006) to replace CRU as the United
-								Kingdom DDC partner, and formally joined the DDC at the TGICA 13th meeting (Nadi, 17-19
-								June 2007). BADC evolved its name to the Centre for Environmental Data Analysis (CEDA)
-								in 2012. In 2019, Spanish Research Council - Instituto de Física de Cantabria
-								(CSIC-IFCA) participated in the TG-Data first meeting (Montreal, 6-8 November 2019), and
-								joined the DDC in March 2021. Since June 2021, MetadataWorks has participated in DDC
-								activities, and replaced CEDA as the United Kingdom DDC partner at TG-Data F2F meeting
-								(22 October 2021).</p>
+						<p>The Memorandum of Understanding for Operation of the IPCC Data Distribution Centre is
+							available <a href="https://doi.org/10.5281/zenodo.3661045">here.</a></p>
+						<div class="about-box-2">
+							<h2>Who We Are</h2>
+							<p>The DDC operates under the oversight of TG-DATA, in close liaison with the three IPCC
+								Working Group Bureaus.</p>
+						</div>
+						<h2>The DDC is jointly managed by the DDC Partners:</h2>
+						<div class="about-box-1">
+							<ul>
+								<li>Center for International Earth Science Information Network (CIESIN, USA).
+									Managed by CHEN Bob and XING Xiaoshi.</li>
+								<li>Deutsches Klimarechenzentrum GmbH (DKRZ, Germany). Managed by STOCKHAUSE
+									Martina.</li>
+								<li>Consejo Superior de Investigaciones Científicas, Instituto de Física de
+									Cantabria (CSIC-IFCA, Spain). Managed by GUTIÉRREZ José Manuel and COFIÑO
+									Antonio.</li>
+								<li>MetadataWorks, on behalf of the UK Department for Business, Energy and
+									Industrial Strategy. Managed by IRWIN Courtney and MILWARD Adam.</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</section>
-			<footer>
-				<div class="footer-top">
-					<div class="container">
-						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column-reverse">
-							<div class="left"> <a href="/domain/copyright.html">COPYRIGHT </a><a
-									href="/domain/disclaimer.html">DISCLAIMER</a><a
-									href="/domain/privacy-policy.html">PRIVACY
-									POLICY</a></div>
-							<div class="right"><img class="footer-logo" src="./assets/images/logo-footer.svg"
-									alt="MetadataWorks"><img class="footer-who" src="./assets/images/who.svg"
-									alt="MetadataWorks"></div>
-						</div>
+					<div class="about-box-background-2">
+						<h2>History of the DDC</h2>
+						<p>The initiative to establish a mechanism for dissemination of data grew out of discussions
+							on establishment of the Task Group on Scenarios for Climate Impact Assessment (TGCIA) at
+							the IPCC Workshop on Regional Climate Change Projections for Impact Assessment (London,
+							24-26 September 1996). This Task Group was formed in a Preliminary Planning Meeting
+							(Bracknell, 9-10 January 1997). The recommendation to establish a Data Distribution
+							Centre was formulated at this meeting and led to the decision on the First TGCIA Meeting
+							(Washington, 5-6 May 1997) to seek Bureau approval for a request to governments to
+							provide the necessary financial support to establish and maintain the DDC function.</p>
+						<br>
+						<p>The IPCC Data Distribution Centre (DDC) was formally established by the decisions at the
+							IPCC Bureau 14th Session (Maldives, 21 September 1997) and at the 13th IPCC Plenary
+							(Maldives, 22-28 September 1997). An Ad-Hoc Committee on the Data Distribution Centre
+							was formed to identify institutions to act as the DDC. Among several institutions
+							nominated by governments, Deutsches Klimarechenzentrum (DKRZ) in Germany and the
+							Climatic Research Unit (CRU) in the United Kingdom were selected as a shared DDC
+							operation.</p>
+						<br>
+						<p>The DDC was overseen by the IPCC TGCIA, which was renamed to the Task Group on Data and
+							Scenario Support for Impacts and Climate Analysis (TGICA) in 2003. The governance of the
+							DDC was reviewed by an Ad-Hoc task force in 2017/18, resulting in revised guidance and
+							objectives adopted at 47th IPCC Plenary (Paris,13-16 March 2018): new Terms of Reference
+							for the Task Group renamed in Task Group on Data Support for Climate Change Assessments
+							(TG-Data) and new Guidance for the core functions of the DDC.</p>
+						<br>
+						<p>Between 2000 and 2009, the German DDC was operated by the Model and Data Group of the Max
+							Planck Institute for Meteorology (MaD/MPI-M). The Center for International Earth Science
+							Information Network (CIESIN) in the USA was invited in the TGCIA third meeting (New
+							York, 15-17 May 2000) and in the 5th meeting (Barbados, 26-29 November 2001) to develop
+							socio-economic scenario data link to the DDC. CIESIN became a formal part of the DDC at
+							the TGCIA 6th meeting (Helsinki, 5-7 June 2002), which was reported to the 20th IPCC
+							Plenary (Paris, 19-21 February 2003). British Atmospheric Data Centre (BADC) was invited
+							to the TGICA 12th meeting (Exeter, 4-6 October 2006) to replace CRU as the United
+							Kingdom DDC partner, and formally joined the DDC at the TGICA 13th meeting (Nadi, 17-19
+							June 2007). BADC evolved its name to the Centre for Environmental Data Analysis (CEDA)
+							in 2012. In 2019, Spanish Research Council - Instituto de Física de Cantabria
+							(CSIC-IFCA) participated in the TG-Data first meeting (Montreal, 6-8 November 2019), and
+							joined the DDC in March 2021. Since June 2021, MetadataWorks has participated in DDC
+							activities, and replaced CEDA as the United Kingdom DDC partner at TG-Data F2F meeting
+							(22 October 2021).</p>
 					</div>
 				</div>
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
-							<div class="left d-flex">
-								<div class="image margin-right"><a
-										href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
-											src="./assets/images/bottom-footer-1.svg"
-											alt="Department for Business, Energy and Industrial Strategy"></a></div>
-								<div class="image"><a href="https://www.dkrz.de/"><img
-											src="./assets/images/bottom-footer-2.svg" alt="DKRZ"></a></div>
-								<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
-											src="./assets/images/CIESIN-CCS_logo_sm.png"
-											alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
-								</div>
-								<div class="image"><a href="https://www.nasa.gov/"><img
-											src="./assets/images/bottom-footer-4.png" alt="NASA"></a></div>
-								<div class="image"><a href="https://ifca.unican.es/"><img
-											src="./assets/images/CSIF-IFCA.png"
-											alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
-							</div>
-							<div class="right"><a href="https://metadataworks.co.uk/"><img
-										src="./assets/images/bottom-footer-5.svg" alt="MetadataWorks"></a></div>
-						</div>
-					</div>
-				</div>
-			</footer>
 		</div>
+		</section>
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column-reverse">
+						<div class="left"> <a href="copyright.html">COPYRIGHT </a><a
+								href="disclaimer.html">DISCLAIMER</a><a href="privacy-policy.html">PRIVACY
+								POLICY</a></div>
+						<div class="right"><img class="footer-logo" src="./assets/images/logo-footer.svg"
+								alt="IPCC logo"><img class="footer-who" src="./assets/images/who.svg"
+								alt="WMO | UNEP | 2007 Nobel Peace Prize winner logos"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+						<div class="left d-flex align-items-center">
+							<div class="image margin-right "><a
+									href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy"><img
+										src="assets/images/bottom-footer-1-department-for-business-energy-and-industrial-strategy.svg"
+										alt="Department for Business, Energy and Industrial Strategy"></a></div>
+							<div class="image"><a href="https://www.dkrz.de/"><img
+										src="assets/images/bottom-footer-2-dkrz.svg" alt="DKRZ"></a></div>
+							<div class="image margin-right"><a href="http://www.ciesin.columbia.edu/"><img
+										src="./assets/images/CIESIN-CCS_logo_sm.png"
+										alt="Columbia Climate School - Center for International Earth Science Information Network"></a>
+							</div>
+							<div class="image"><a href="https://www.nasa.gov/"><img
+										src="assets/images/bottom-footer-4-nasa.png" alt="NASA"></a></div>
+							<div class="image"><a href="https://ifca.unican.es/"><img src="assets/images/CSIC-IFCA.png"
+										alt="CSIC-IFCA (CSIC - Institute of Physics of Cantabria)"></a></div>
+						</div>
+						<div class="right align-items-center"><a href="https://metadataworks.co.uk/"><img
+									src="assets/images/bottom-footer-6-metadataworks.svg" alt="MetadataWorks"></a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 	</div>
 	<!-- Scripts-->
 	<script src="./assets/vendors/jquery/jquery.min.js"></script>
 	<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
 	<script src="./assets/vendors/slick/slick.min.js"></script>
 	<script src="./assets/js/scripts.min.js"></script>
+	<script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>
