@@ -21,7 +21,13 @@
     <![endif]-->
 </head>
 
+<script src="./assets/vendors/jquery/jquery.min.js"></script>
+<script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
+<script src="./assets/vendors/slick/slick.min.js"></script>
+<script src="./assets/js/analytics.js"></script>
+
 <body>
+  TEST
   <div class="wrapper">
     <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
       <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -90,10 +96,6 @@
     ga('send','pageview');
   </script>
   {% endif %}
-  <script src="./assets/vendors/jquery/jquery.min.js"></script>
-  <script src="./assets/vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="./assets/vendors/slick/slick.min.js"></script>
-  <script src="./assets/js/analytics.js"></script>
 </body>
 
 </html>
