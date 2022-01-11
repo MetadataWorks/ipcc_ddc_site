@@ -7,7 +7,7 @@ sed -i '' "s,${URL1},${URL2},g" "data_catalogue.html";
 sed -i '' "s,${URL1},${URL2},g" "_site/data_catalogue.html";
 echo "Success!"
 
-PROD="G-2WXQ7WQ7JW";
+PROD="G-9X9X51FDVZ";
 PREPROD="G-0M26637VMX";
 PROD_COMMENT='"ipcc-\[production-browser\]" GA Property';
 PREPROD_COMMENT='"ipcc-preprod-browser" GA Property';
