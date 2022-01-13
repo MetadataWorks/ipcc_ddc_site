@@ -16,12 +16,7 @@ echo "Replacing PROD: $PROD with PREPROD: $PREPROD"...
 
 ## declare an array variable
 declare -a filenames=(
-"about.html" "copyright.html"
-"data_catalogue.html" "disclaimer.html"
-"embeded-tools.html" "index.html"
-"privacy-policy.html"
-"_layouts/alt.html" "_layouts/ddc02.html"
-"_layouts/ddc_simple_banner.html" "_layouts/default.html")
+"assets/js/analytics.js")
 
 ## now loop through the above array
 for filename in "${filenames[@]}"
