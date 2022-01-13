@@ -9,8 +9,8 @@ echo "Success!"
 
 PROD="G-9X9X51FDVZ";
 PREPROD="G-0M26637VMX";
-PROD_COMMENT='"ipcc-\[production-browser\]" GA Property';
-PREPROD_COMMENT='"ipcc-preprod-browser" GA Property';
+PROD_COMMENT='Measurement ID for Web stream with URL = "https://ipcc-data.org"';
+PREPROD_COMMENT='Measurement ID for Web stream with URL = "https://ipcc-preprod.metadatadev.co.uk"';
 
 echo "Replacing PROD: $PROD with PREPROD: $PREPROD"...
 
