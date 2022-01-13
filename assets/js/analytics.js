@@ -1,4 +1,5 @@
 function initialiseGoogleAnalytics() {
+    console.log("Initialising Google Analytics...")
     var head = document.getElementsByTagName('head')[0];
     var googleAnalyticsScript = document.createElement('script');
     var GOOGLE_ANALYTICS_TRACKING_ID = 'G-9X9X51FDVZ'; // Measurement ID for Web stream with URL = "https://ipcc-data.org"
@@ -12,7 +13,7 @@ function initialiseGoogleAnalytics() {
 }
 
 // If consent cookie exists then initialise tracking
-if (document.cookie === 'google_analytics_user_consented=yes') {
+if (document.cookie.includes('google_analytics_user_consented=yes')) {
     initialiseGoogleAnalytics()
 } else if (!document.cookie.includes('google_analytics_user_consented')) {
     $('#myModal').modal('show');
