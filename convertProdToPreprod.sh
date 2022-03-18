@@ -1,10 +1,12 @@
 #!/bin/bash
 
-URL1="https://ipcc.metadata.works";
-URL2="https://ipcc-preprod-browser.metadatadev.co.uk";
+URL1="ipcc-browser.ipcc-data.org";
+URL2="ipcc-preprod-browser.metadatadev.co.uk";
 echo "Replacing $URL1 with $URL2"...
 sed -i '' "s,${URL1},${URL2},g" "data_catalogue.html";
 sed -i '' "s,${URL1},${URL2},g" "_site/data_catalogue.html";
+sed -i '' "s,${URL1},${URL2},g" "ar6landing.html";
+sed -i '' "s,${URL1},${URL2},g" "_site/ar6landing.html";
 echo "Success!"
 
 PROD="G-2WXQ7WQ7JW";
