@@ -1,6 +1,4 @@
 /.idea/
 .idea/
-_site/
-.jekyll-cache/
-Gemfile.lock
 *.iml
+Gemfile.lock
