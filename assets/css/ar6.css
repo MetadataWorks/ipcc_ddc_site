@@ -381,7 +381,7 @@
 		letter-spacing: 0.1em;
 		color: #fff;
 		/* font-family: "	"; */
-		font-family: "Poppins";
+		font-family: "RobotoCondensed";
 		margin-right: 100px;
 		text-decoration: none;
 	}
@@ -440,7 +440,7 @@
 		color: #FFFFFF;
 		font-size: 13px;
 		line-height: 23px;
-		font-family: "Poppins", sans-serif;
+		font-family: "RobotoCondensed", sans-serif;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 		width: 0px;
 		opacity: 0;
@@ -580,7 +580,7 @@
 		cursor: pointer;
 		display: block;
 		padding: 5px 0;
-		font-family: "Poppins";
+		font-family: "RobotoCondensed";
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 19px;
@@ -935,7 +935,7 @@
 		line-height: 16px;
 		letter-spacing: 0.1em;
 		color: #fff;
-		font-family: "Poppins";
+		font-family: "RobotoCondensed";
 		margin-right: 60px;
 	}
 
